@@ -2,4 +2,4 @@
 this JS package contains classes that can be used to animate a ThreeJS camera.
 
 ### CameraAnimationCurve
-creates a path for the camera to follow
+It creates a curve path for the camera to follow; it may be a looping path.
