@@ -4,7 +4,7 @@
 
 import * as THREE from "three";
 
-export class CameraAnimationCurve {
+class CameraAnimationCurve {
     #t //this is the position along the curve between [0, 1] if not loop;
     
     //construct a new CameraAnimationCurve
@@ -60,7 +60,12 @@ export class CameraAnimationCurve {
         this.#setCamera();
     }
 
+    #clamp_t() {
+        this.#t = (this.loop === false && this.#t > 1.0) ? 1.0 : this.#t;
+    }
+
     #setCamera() {
+        this.#clamp_t();
         this.camera.position.copy( this.pathCurve.getPoint(this.#t) );
         this.camera.up.copy( this.upCurve.getPoint(this.#t) );
         this.camera.lookAt( this.lookCurve.getPoint(this.#t) );
@@ -76,3 +81,5 @@ export class CameraAnimationCurve {
         )
     }
 }
+
+module.exports = CameraAnimationCurve
