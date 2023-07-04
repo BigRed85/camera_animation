@@ -1,6 +1,6 @@
 {
   "name": "camera_animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Classes that will animate a threeJS camera",
   "main": "camera_animation.js",
   "scripts": {
