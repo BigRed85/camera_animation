@@ -20,12 +20,12 @@ Added a CameraAnimation class that all camera animations will be subclasses of.
 ## important Classes, Functions and Constants
 
 ### Constants
-NO_TRANSITON : flag for the CameraDirector
-LINEAR_TRANSITION : flag for the CameraDirector
-SIN_TRANSITON : flag for the CameraDirector
-QUADRADIC_TRANSITION : flag for the CameraDirector
-LOG_TRANSITION : flag for the CameraDirector
-CUSTOM_TRANSITION : flag thet tells the CameraDirector that it should use a given custom function for 
+- NO_TRANSITON : flag for the CameraDirector
+- LINEAR_TRANSITION : flag for the CameraDirector
+- SIN_TRANSITON : flag for the CameraDirector
+- QUADRADIC_TRANSITION : flag for the CameraDirector
+- LOG_TRANSITION : flag for the CameraDirector
+- CUSTOM_TRANSITION : flag thet tells the CameraDirector that it should use a given custom function for 
 
 
 ### CameraDirector class
@@ -38,11 +38,11 @@ Methods:
         autoPlay = true,
         transitionFunction = null})
     - transition Type can be any of the following:
-        NO_TRANSITON
-        LINEAR_TRANSITION
-        SIN_TRANSITON
-        QUADRADIC_TRANSITION
-        LOG_TRANSITION
+        NO_TRANSITON,
+        LINEAR_TRANSITION,
+        SIN_TRANSITON,
+        QUADRADIC_TRANSITION,
+        LOG_TRANSITION,
         CUSTOM_TRANSITION
     - transitionTime should be in seconds, it will determin how long it takes to ease into the animations.
     - animations is an array containg the animation data and the names of each anmiation, this will be the queue
@@ -57,12 +57,12 @@ Methods:
 - setTransition({transitionType = NO_TRANSITON, transitionTime = 0,customFunction = null})
     - sets the transition type and time
     - transition Type can be any of the following:
-        NO_TRANSITON
-        LINEAR_TRANSITION
-        SIN_TRANSITON
-        QUADRADIC_TRANSITION
-        LOG_TRANSITION
-        CUSTOM_TRANSITION
+        NO_TRANSITON,
+        LINEAR_TRANSITION,
+        SIN_TRANSITON,
+        QUADRADIC_TRANSITION,
+        LOG_TRANSITION,
+        CUSTOM_TRANSITION,
     - transitionTime should be in seconds, it will determin how long it takes to ease into the animations.
     - customFunction is the custom function that will be used if the transition type is CUSTOM_TRANSITION, this should be a function that will take in a value in the range of 0 to 1 and return a value in the range of 0 to 1
 
