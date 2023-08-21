@@ -57,12 +57,12 @@ Methods:
 - setTransition({transitionType = NO_TRANSITON, transitionTime = 0,customFunction = null})
     - sets the transition type and time
     - transition Type can be any of the following:
-        NO_TRANSITON,
-        LINEAR_TRANSITION,
-        SIN_TRANSITON,
-        QUADRADIC_TRANSITION,
-        LOG_TRANSITION,
-        CUSTOM_TRANSITION,
+        - NO_TRANSITON,
+        - LINEAR_TRANSITION,
+        - SIN_TRANSITON,
+        - QUADRADIC_TRANSITION,
+        - LOG_TRANSITION,
+        - CUSTOM_TRANSITION,
     - transitionTime should be in seconds, it will determin how long it takes to ease into the animations.
     - customFunction is the custom function that will be used if the transition type is CUSTOM_TRANSITION, this should be a function that will take in a value in the range of 0 to 1 and return a value in the range of 0 to 1
 
